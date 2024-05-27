@@ -137,6 +137,89 @@ a:visited {
   width: 20px;
 }
 
+/* style for works section  */
+main {
+  border: 1px solid red;
+  display: grid;
+  gap: 80px;
+  margin: 100px 0;
+}
+
+.works {
+  background-color: #fff;
+  padding: 15px;
+  margin: 0 50px;
+  border-radius: 15px;
+}
+
+.works h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #172b4d;
+  text-transform: capitalize;
+}
+
+.works ul {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7a869a;
+  display: flex;
+  list-style: disc;
+  width: 80%;
+}
+
+.works li {
+  margin-right: 20px;
+  text-transform: capitalize;
+}
+
+.works .client {
+  text-transform: uppercase;
+  color: #344563;
+  list-style: none;
+}
+
+.works p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #344563;
+}
+
+.works .work-description {
+  display: grid;
+  gap: 20px;
+}
+
+.works .tech-used {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6070ff;
+  list-style: none;
+  display: flex;
+  text-transform: none;
+}
+
+.works .tech-used li {
+  text-align: center;
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 2px 5px;
+  margin-right: 5px;
+  width: fit-content;
+}
+
+.works a {
+  font-size: 17px;
+  font-weight: 500;
+  color: #396df2;
+  text-decoration: none;
+  border: 1px solid #396df2;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+/* style for tablet screens */
 @media (min-width: 376px) {
   header {
     background-image: url('/images/header-bg.png');
