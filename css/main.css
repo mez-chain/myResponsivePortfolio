@@ -32,7 +32,6 @@ img {
 
 /* style for the header section */
 header {
-  border: 1px solid red;
   background-color: #fff;
   background-image: url('/images/header-mobile.png');
   background-repeat: no-repeat;
@@ -119,14 +118,14 @@ a:visited {
   color: #344563;
 }
 
-.headline h3 {
+.h3-class {
   font-size: 16px;
   font-weight: 500;
   color: #7f8cff;
   text-transform: uppercase;
 }
 
-.headline .social {
+.social {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -139,7 +138,6 @@ a:visited {
 
 /* style for works section  */
 main {
-  border: 1px solid red;
   display: grid;
   gap: 80px;
   margin: 100px 0;
@@ -208,7 +206,7 @@ main {
   width: fit-content;
 }
 
-.works a {
+.button-class {
   font-size: 17px;
   font-weight: 500;
   color: #396df2;
@@ -217,6 +215,84 @@ main {
   padding: 10px;
   border-radius: 10px;
   width: fit-content;
+}
+
+.button-class:visited {
+  color: #396df2;
+}
+/* style for aboutme section  */
+.aboutme {
+  display: grid;
+  gap: 20px;
+  background-color: #fff;
+  padding: 100px 20px;
+  border-top-right-radius: 50px;
+}
+
+.aboutme h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #172b4d;
+  text-transform: capitalize;
+}
+
+.aboutme p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #344563;
+}
+
+.general-info {
+  display: grid;
+  gap: 10px;
+}
+
+.tech-info {
+  display: flex;
+  width: 100%;
+}
+
+.tech-info ul {
+  width: 100%;
+}
+
+.tech-info .closed {
+  display: flex;
+  width: 100%;
+}
+
+.tech-info .down,
+.tech-info .union {
+  width: 24px;
+}
+
+.tech-info ul li {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.tech-info .opened {
+  width: 48px;
+  background-color: #344563;
+  width: 100%;
+}
+
+.tech-info .languages span {
+  background-color: #344563;
+  flex-grow: 1;
+}
+
+.tech-info .languages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 48px;
 }
 
 /* style for tablet screens */
