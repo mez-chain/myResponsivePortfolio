@@ -30,9 +30,6 @@ img {
   width: 100%;
 }
 
-a:visited {
-  color: inherit;
-}
 /* style for the header section */
 header {
   border: 1px solid red;
@@ -51,6 +48,10 @@ header a {
   text-decoration: none;
 }
 
+a:visited {
+  color: inherit;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -63,7 +64,7 @@ header a {
   position: relative;
 }
 
-.navbar .toggleNav.menu-active:before {
+.navbar .toggleNav.menu-active::before {
   content: '';
   border-width: 10px;
   border-style: solid;
@@ -145,7 +146,6 @@ header a {
 
 /* style for desktop screens */
 @media (min-width: 767px) {
-
   header {
     background-image: url('/images/header-bg.png');
     background-size: cover;
