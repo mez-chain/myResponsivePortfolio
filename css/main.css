@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  border: 1px solid green;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  width: 50%;
+}
+
+img {
+  width: 100%;
+}
+
+/* style for the header section */
+header {
+  background-color: #fff;
+  background-image: url('/images/header-mobile.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 100px 20px;
+  border-bottom-left-radius: 50px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.navbar .toggleNav {
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar .toggleNav.menu-active::before {
+  content: '';
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.navbar .logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #6070ff;
+}
+
+.navbar ul {
+  font-size: 15px;
+  font-weight: 500;
+  color: #344563;
+  display: none;
+}
+
+.navbar ul.open {
+  background-color: #333;
+  color: #fff;
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 60px;
+  margin: 20px;
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.headline h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.headline p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #344563;
+}
+
+.h3-class {
+  font-size: 16px;
+  font-weight: 500;
+  color: #7f8cff;
+  text-transform: uppercase;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.headline .social img {
+  width: 20px;
+}
+
+/* style for works section  */
+main {
+  display: grid;
+  gap: 80px;
+  margin: 100px 0;
+}
+
+.works {
+  background-color: #fff;
+  padding: 15px;
+  margin: 0 50px;
+  border-radius: 15px;
+}
+
+.works h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #172b4d;
+  text-transform: capitalize;
+}
+
+.works ul {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7a869a;
+  display: flex;
+  list-style: disc;
+  width: 80%;
+}
+
+.works li {
+  margin-right: 20px;
+  text-transform: capitalize;
+}
+
+.works .client {
+  text-transform: uppercase;
+  color: #344563;
+  list-style: none;
+}
+
+.works p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #344563;
+}
+
+.works .work-description {
+  display: grid;
+  gap: 20px;
+}
+
+.works .tech-used {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6070ff;
+  list-style: none;
+  display: flex;
+  text-transform: none;
+}
+
+.tech-info ul li {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.works .tech-used li {
+  text-align: center;
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 2px 5px;
+  margin-right: 5px;
+  width: fit-content;
+}
+
+.button-class {
+  font-size: 17px;
+  font-weight: 500;
+  color: #396df2;
+  text-decoration: none;
+  border: 1px solid #396df2;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.button-class:visited {
+  color: #396df2;
+}
+
+/* style for aboutme section  */
+.aboutme {
+  display: grid;
+  gap: 20px;
+  background-color: #fff;
+  padding: 100px 20px 150px 20px;
+  border-top-right-radius: 50px;
+}
+
+.aboutme h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #172b4d;
+  text-transform: capitalize;
+}
+
+.aboutme p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #344563;
+}
+
+.general-info {
+  display: grid;
+  gap: 10px;
+}
+
+.tech-info {
+  display: flex;
+  width: 100%;
+}
+
+.tech-info ul {
+  width: 100%;
+}
+
+.tech-info .closed {
+  display: flex;
+  width: 100%;
+}
+
+.tech-info .down,
+.tech-info .union {
+  width: 24px;
+}
+
+.tech-info .opened {
+  width: 48px;
+  background-color: #344563;
+}
+
+.tech-info .languages span {
+  background-color: #344563;
+  flex-grow: 1;
+}
+
+.tech-info .languages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 48px;
+}
+
+/* style for the form section */
+.contact-form {
+  background-color: #6070ff;
+  background-image: url('/images/form-mobile-bg.png');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 50px;
+  margin-top: -50px;
+}
+
+.contact-form h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.contact-form p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+#name,
+#email {
+  font-size: 17px;
+  font-weight: 400;
+  color: #172b4d;
+}
+
+#message {
+  font-size: 15px;
+  font-weight: 400;
+  resize: none;
+}
+
+button {
+  font-size: 17px;
+  font-weight: 500;
+  color: #6070ff;
+  width: fit-content;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* style for tablet screens */
+@media (min-width: 376px) {
+  header {
+    background-image: url('/images/header-bg.png');
+    background-size: contain;
+  }
+}
+
+/* style for desktop screens */
+@media (min-width: 767px) {
+  header {
+    background-image: url('/images/header-bg.png');
+    background-size: cover;
+  }
+
+  .navbar ul {
+    display: flex !important;
+  }
+
+  .navbar li {
+    margin-left: 20px;
+  }
+
+  .navbar .toggleNav {
+    display: none;
+  }
+
+  header a:hover {
+    text-decoration: underline;
+  }
+}
