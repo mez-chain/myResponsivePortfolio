@@ -197,6 +197,17 @@ main {
   text-transform: none;
 }
 
+.tech-info ul li {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .works .tech-used li {
   text-align: center;
   background-color: #ebebff;
@@ -265,17 +276,6 @@ main {
 .tech-info .down,
 .tech-info .union {
   width: 24px;
-}
-
-.tech-info ul li {
-  font-size: 20px;
-  font-weight: 500;
-  color: #000;
-  text-transform: capitalize;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
 }
 
 .tech-info .opened {
