@@ -401,9 +401,33 @@ button:hover {
   .headline {
     padding: 10%;
   }
+
   .headline p {
     font-size: 20px;
     font-weight: 400;
     color: #344563;
+  }
+
+  .works {
+    display: flex;
+    justify-content: center;
+  }
+
+  .works div {
+    flex: 1;
+    margin: 2%;
+    align-self: center;
+  }
+
+  .works .work-description {
+    align-self: flex-start;
+  }
+
+  .works .work-description h1 {
+    font-size: 40px;
+  }
+
+  .works .w-image {
+    order: 2;
   }
 }
