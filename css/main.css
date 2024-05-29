@@ -23,7 +23,6 @@ body {
 
 ul {
   list-style: none;
-  width: 50%;
 }
 
 img {
@@ -205,7 +204,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 
 .works .tech-used li {
@@ -259,42 +257,50 @@ main {
   gap: 10px;
 }
 
-.tech-info {
+.tech-info .labels {
+  list-style: none;
+  display: grid;
+  gap: 20%;
+}
+
+.tech-info li {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.tech-info ul {
-  width: 100%;
+span {
+  width: 90%;
 }
 
-.tech-info .closed {
-  display: flex;
-  width: 100%;
-}
-
-.tech-info .down,
-.tech-info .union {
-  width: 24px;
-}
-
-.tech-info .opened {
-  width: 48px;
-  background-color: #344563;
-}
-
-.tech-info .languages span {
-  background-color: #344563;
-  flex-grow: 1;
-}
-
-.tech-info .languages {
+.opened {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  width: 48px;
 }
 
+.opened li {
+  align-self: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100px;
+  display: flex;
+}
+
+.opened .languages {
+  display: flex;
+  width: 48px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #253858;
+  background-color: #f7f7f9;
+  margin-right: 20px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.opened .languages img {
+  width: 48px;
+}
 /* style for the form section */
 .contact-form {
   background-color: #6070ff;
@@ -430,4 +436,21 @@ button:hover {
   .works .w-image {
     order: 2;
   }
+
+  .aboutme {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .aboutme .general-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .aboutme .tech-info {
+    width: 60%;
+  }
+
 }
