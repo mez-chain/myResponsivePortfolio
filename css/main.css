@@ -367,13 +367,23 @@ button:hover {
 
 /* style for desktop screens */
 @media (min-width: 767px) {
-  header {
+  .container header {
     background-image: url('/images/header-bg.png');
     background-size: cover;
+    height: 100vh;
+  }
+
+  .container header h1 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .navbar {
+    padding: 0 8%;
   }
 
   .navbar ul {
-    display: flex !important;
+    display: flex;
   }
 
   .navbar li {
@@ -386,5 +396,14 @@ button:hover {
 
   header a:hover {
     text-decoration: underline;
+  }
+
+  .headline {
+    padding: 10%;
+  }
+  .headline p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #344563;
   }
 }
