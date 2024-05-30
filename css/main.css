@@ -197,6 +197,11 @@ main {
   flex-wrap: wrap;
 }
 
+.tech-info li {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .tech-info ul li {
   font-size: 20px;
   font-weight: 500;
@@ -261,11 +266,6 @@ main {
   gap: 10px;
 }
 
-.tech-info li {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 span {
   width: 80%;
 }
@@ -278,7 +278,7 @@ span {
   margin-top: 20px;
 }
 
-.opened li {
+.aboutme .tech-info .opened li {
   flex-basis: 660px;
   flex-shrink: 1;
   display: flex;
@@ -310,6 +310,7 @@ i {
 .closed {
   border-bottom: 1px solid #dfe1e6;
 }
+
 /* style for the form section */
 footer {
   background-color: #6070ff;
@@ -464,7 +465,8 @@ button:hover {
 
   .aboutme {
     display: flex;
-  flex-direction: row;  }
+    flex-direction: row;
+  }
 
   .aboutme .general-info {
     width: 40%;
