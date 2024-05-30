@@ -205,6 +205,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
 }
 
 .works .tech-used li {
@@ -234,7 +235,8 @@ main {
 
 /* style for aboutme section  */
 .aboutme {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   background-color: #fff;
   padding: 100px 20px 150px 20px;
@@ -259,49 +261,54 @@ main {
   gap: 10px;
 }
 
-.tech-info .labels {
-  list-style: none;
-  display: grid;
-  gap: 20%;
-}
-
 .tech-info li {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 span {
-  width: 90%;
+  width: 80%;
 }
 
 .opened {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .opened li {
-  align-self: center;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 100px;
+  flex-basis: 660px;
+  flex-shrink: 1;
   display: flex;
 }
 
 .opened .languages {
-  display: flex;
-  width: 48px;
   font-size: 15px;
   font-weight: 500;
   color: #253858;
   background-color: #f7f7f9;
-  margin-right: 20px;
+  margin-bottom: 10px;
   padding: 5px;
   border-radius: 8px;
+  justify-content: flex-start;
 }
 
 .opened .languages img {
   width: 48px;
+}
+
+.opened .languages span {
+  padding-left: 20px;
+}
+
+i {
+  padding-right: 30px;
+}
+
+.closed {
+  border-bottom: 1px solid #dfe1e6;
 }
 /* style for the form section */
 footer {
@@ -428,6 +435,15 @@ button:hover {
     justify-content: center;
   }
 
+  .opened {
+    flex-direction: row;
+  }
+
+  .opened li {
+    flex-basis: 100px;
+    margin-right: 20px;
+  }
+
   .works div {
     flex: 1;
     margin: 2%;
@@ -448,8 +464,7 @@ button:hover {
 
   .aboutme {
     display: flex;
-    align-items: flex-start;
-  }
+  flex-direction: row;  }
 
   .aboutme .general-info {
     width: 40%;
