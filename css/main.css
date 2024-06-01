@@ -496,6 +496,15 @@ button:hover {
     width: 60%;
   }
 
+  .opened {
+    flex-wrap: nowrap;
+  }
+
+  .opened .languages {
+    min-width: 120px;
+    max-width: 120px;
+  }
+
   footer {
     background-image: url('/images/form-bg.png');
     background-repeat: no-repeat;
