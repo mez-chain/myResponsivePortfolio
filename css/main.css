@@ -445,6 +445,7 @@ button:hover {
 
   .opened {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   .opened li {
@@ -494,10 +495,6 @@ button:hover {
 
   .aboutme .tech-info {
     width: 60%;
-  }
-
-  .opened {
-    flex-wrap: nowrap;
   }
 
   .opened .languages {
